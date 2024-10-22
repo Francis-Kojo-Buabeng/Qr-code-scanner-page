@@ -1,0 +1,68 @@
+
+:root {
+    --White: hsl(0, 0%, 100%);
+    --Slate-300: hsl(212, 45%, 89%);
+    --Slate-500: hsl(216, 15%, 48%);
+    --Slate-900: hsl(218, 44%, 22%);
+}
+
+body {
+    background-color: var(--Slate-300);  
+    margin: 0;
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    background-color: var(--White);
+    border-radius: 15px;
+    padding: 20px; 
+}
+
+#text-section {
+    width: 108%;
+    margin-top: -10px; 
+}
+
+img {
+  width: 100%; 
+  border-radius: 5px
+   
+}
+
+h1 {
+    color: var(--Slate-900);
+    text-align: center;
+    font-size: large;
+    font-weight: bold; 
+}
+
+h2 {
+    color: var(--Slate-500);
+    text-align: center;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 375px) {
+    .container{
+        width: 290px;
+    }
+}
+
+.attribution { 
+    margin-top: 10px;
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
